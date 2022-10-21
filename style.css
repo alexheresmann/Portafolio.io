@@ -1,0 +1,293 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+
+   
+    display: inline-flex;
+    flex-direction: row;
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+
+.menu{
+display: flex;
+background-color: rgb(226, 226, 226);
+}
+
+.menu__title{
+    display: inline;   
+}
+
+.menu__list{
+    display: inline;
+}
+
+.title__div{
+background-color: rgb(213, 228, 255);
+}
+.title__profile{
+    display: inline-flexbox;
+    position: relative;
+    left: 950px;
+    width:300px;
+    height:300px;
+    border-radius:150px; 
+    top: 100px;
+}
+
+.title__container{
+    position: relative;
+    top: -200px
+    
+}
+
+.title__bio{
+    font-size: 30px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+
+.title__subsection{
+    left: 350px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+
+.title__network{
+    position: relative;
+    left: 350px;
+}
+
+.about__title{
+    font-size: 30px;
+    margin-bottom: 100px; 
+}
+.about__paragraph{
+    font-size: 25px;
+    margin-top: 50px; 
+    margin-bottom: 150px; 
+    margin-left: 30px;
+    margin-right: 30px;
+    font-stretch: condensed;
+}
+
+.skills__title{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.skills__line{    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 420px;
+}
+.skills__box{
+    border-style: solid;
+    margin: 35px;
+}
+
+
+.hobbies__title{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.hobbies__line{    
+    display: flex;
+   /* flex-direction: column;*/
+    flex-wrap: wrap;
+   /* height: 420px;*/
+}
+.hobbies__box{
+    border-style: solid;
+    margin: 35px;
+}
+
+
+.academic__title{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.academic__courses__box{
+    border-style: solid;
+    margin: 10px;
+}
+
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+.title__profile {
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    border-radius: 150px;
+}
+.title__bio {
+    margin-top: 200px;
+}
+/*Sección sobre mi*/
+
+/*Skills*/
+
+.skills__line{    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 150px;
+}
+
+.skills__box{
+    display: flex;
+    border-style: solid;
+    margin: 10px;
+    width: 150px;
+}
+
+/*Hobbies*/
+.hobbies__line{    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 150px;
+}
+.hobbies__box{
+    display: flex;
+    border-style: solid;
+    margin: 10px;
+    width: 150px;
+}
+
+
+ul {
+    flex-direction: column;
+    display: flex;
+    direction: colum;
+    margin: 0px;
+    height: 150px;
+}
+
+
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
