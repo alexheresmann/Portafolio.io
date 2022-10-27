@@ -25,7 +25,7 @@ ol, ul,li {
    
     display: inline-flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 10px;
 }
 a{
     text-decoration: none;
@@ -92,7 +92,9 @@ section.footer{
    
 }
 
-
+p{
+    text-align: center;
+}
 .menu{
 display: flex;
 background-color: rgb(226, 226, 226);
@@ -142,6 +144,10 @@ background-color: rgb(213, 228, 255);
     left: 350px;
 }
 
+
+.about{
+    margin: 20px;
+}
 .about__title{
     font-size: 30px;
     margin-bottom: 100px; 
@@ -155,21 +161,58 @@ background-color: rgb(213, 228, 255);
     font-stretch: condensed;
 }
 
+
+.skills{
+    margin: 20px;
+}
+
 .skills__title{
     font-size: 30px;
     margin-bottom: 100px;
 }
 .skills__line{    
     display: flex;
-    flex-direction: column;
+   /* flex-direction: column;*/
     flex-wrap: wrap;
-    height: 420px;
+   /* height: 420px;*/
 }
 .skills__box{
     border-style: solid;
     margin: 35px;
+    width: 150px;   
+    background-color: rgb(250, 240, 240);
+    min-width: 160px;
+    padding-left: 0;
+
+
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+  
 }
 
+.skills__box> ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+
+.skills__box:hover{
+    top: -10px;
+    color: blue;
+    transform: scale(1.05);		  
+}	
+
+.hobbies{
+    margin: 20px;
+}
 
 .hobbies__title{
     font-size: 30px;
@@ -184,8 +227,38 @@ background-color: rgb(213, 228, 255);
 .hobbies__box{
     border-style: solid;
     margin: 35px;
+
+    width: 150px;   
+    background-color: rgb(250, 240, 240);
+    min-width: 170px;
+
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
+.hobbies__box> ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.hobbies__box:hover{
+    top: -10px;
+    color: blue;
+    transform: scale(1.05);		  
+}	
+
+.academic{
+    background: #EAF2FD; 
+    margin: 20px;
+}
 
 .academic__title{
     font-size: 30px;
@@ -194,6 +267,149 @@ background-color: rgb(213, 228, 255);
 .academic__courses__box{
     border-style: solid;
     margin: 10px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+   
+}
+
+.experiencie{
+    margin: 20px;
+}
+    
+
+
+.experiencie__box{
+display: flex;
+flex-direction: row;
+}
+
+.experiencie__box2{
+    display: flex;
+    flex-direction: row-reverse;
+     
+}
+
+
+.experience__img{
+    width: 600px;
+}
+
+.experience__info{
+    margin-top: 50px;
+    margin-left:150px;
+    margin-right:150px;
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.experiencia__botao--repo{
+    /* Botao */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    /* Azul/100% */
+    background: #fdfdfd;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.experience__botao--demo{
+    /* Botao */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 105px;
+    height: 51px;
+    /* Azul/100% */
+    background: #2A7AE4;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* unsplash:JYGnB9gTCls */
+
+.formcontato__contacto{
+    display: flex;
+    flex-direction: row;
+    background: #EAF2FD;
+}
+
+
+.formcontato--esquerda{
+width: 464px;
+height: 593px;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.formcontato__text{
+   
+
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    margin: 43px;
+}
+
+.formcontato__title{
+
+/* Contacto */
+width: 141px;
+height: 38px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+
+}
+
+.formcontato__input{
+ /* Caixa */
+width: 656px;
+height: 56px;
+
+/* Preto/branco */
+
+background: #FFFFFF;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;   
 }
 
 
@@ -219,6 +435,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
+
+
+
 /*Mobile*/
 @media (max-width: 425px) {
 
@@ -237,6 +456,13 @@ Utiliza las referencias de los breakpoints @media abajo */
 .title__bio {
     margin-top: 200px;
 }
+
+
+.title__network {
+    position: relative;
+    left: 10px;
+}
+
 /*Sección sobre mi*/
 
 /*Skills*/
@@ -268,9 +494,16 @@ Utiliza las referencias de los breakpoints @media abajo */
     display: flex;
     border-style: solid;
     margin: 10px;
-    width: 150px;
+    width: 150px;   
+    background-color: rgb(250, 240, 240);
+    min-width: 160px;
 }
 
+.hobbies__box:hover{
+    top: -10px;
+    color: blue;
+    transform: scale(1.05);		  
+}	
 
 ul {
     flex-direction: column;
@@ -283,11 +516,52 @@ ul {
 
  
 /*Formación Académica*/
+.academic__courses__box{
+    height: 250px;
+}
+
 
 /*Experiencia Profesional*/
+.experience{
+  
+    margin : 0px;
+}
 
+
+
+.experiencie__box   {
+    display: grid;
+    align-content: space-between;
+}
+ .experiencie__box2 {
+    display: grid;
+    align-content: space-between;
+}
+
+
+.experience__img {
+    width: 350px;
+    margin : 15px;
+}
+
+.experience__info {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
  /*Contacto*/
+.formcontato--esquerda{
+    display: none;
+}
 
+.formcontato__input {
+    width: 320px;
+}
+
+.formcontato__subtext{
+    width: 350px;
+}
 /*Footer*/
+
 
 }
